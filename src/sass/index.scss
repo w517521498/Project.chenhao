@@ -1,7 +1,22 @@
 @import "compass/reset";
 @import "compass/layout";
 $page_width:1903px;
-icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-size:123px 122px;margin-top:-2px}.yoho-header .tool-wrapper .icon-mail{background-position:-107px -65px;width:16px;height:11px}.yoho-header .tool-wrapper .icon-phone{background-image:url(img/sprite.scss.png?t=1576493576073);background-position:0 -108px;background-size:123px 122px;width:10px;height:14px;margin-top:-2px}.yoho-header .tool-wrapper .yoho-cert-tip{margin-left:20px}.yoho-header .tool-wrapper .yoho-cert-tip 
+// icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-size:123px 122px;margin-top:-2px}.yoho-header .tool-wrapper .icon-mail{background-position:-107px -65px;width:16px;height:11px}.yoho-header .tool-wrapper .icon-phone{background-image:url(img/sprite.scss.png?t=1576493576073);background-position:0 -108px;background-size:123px 122px;width:10px;height:14px;margin-top:-2px}.yoho-header .tool-wrapper .yoho-cert-tip{margin-left:20px}.yoho-header .tool-wrapper .yoho-cert-tip
+@font-face
+{
+    font-family:iconfont;src:url(font/iconfont.eot?16f0e5699f7);src:url(../) format("embedded-opentype"),url(../fonts/iconfont.woff) format("woff"),url(font/iconfont.ttf?16f0e5699f7) format("truetype"),url(font/iconfont.svg?16f0e5699f7#iconfont) format("svg")
+}
+
+body{
+    font-family: arial,SimHei,sans-serif;
+}
+.iconfont.rgbf{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 22px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
 %box{
     width:$page_width;
     margin: 0 auto;
@@ -11,10 +26,113 @@ icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-s
     width: 1150px;
     margin: 0 auto;
 }
+%a{
+    text-decoration: none;
+    color: #000;
+}
+%left{
+    float: left;
+}
+%tool{
+    padding: 0 5px;
+    position: relative;
+}
     #dingbu{
-        @extend %box1,%box;
+        @extend %box;
         height: 40px;
         background: #f4f4f4;
+        .banxin{
+            @extend %box1;
+            .YoHo{
+                height: 40px;
+                line-height: 40px;
+                @extend %left;
+               .icon-hamburger{
+                   background-image: url(../images/sprite.scss.png);
+                   background-position: -19px -86px;
+                   background-size: 123px 122px;
+                   width: 16px;
+                   height: 12px;
+                   display: inline-block;
+                   vertical-align: middle;
+               }
+               a {
+                   @extend %a;
+                   
+               }
+            }
+            .zhapian{
+               @extend %left;
+               color: #444;
+               font-size: 12px;
+               margin-left: 20px;
+               padding: 0 1px;
+               height: 32px;
+               overflow: hidden;
+               height: 40px;
+                line-height: 40px;
+                .icon-jinghao{
+                   display: inline-block;
+                   background-image: url(../images/sprite.scss.png);
+                   background-position: -107px -22px;
+                   background-size: 123px 122px;
+                   width: 15px;
+                   height: 14px;
+                   margin-top: -2px;
+                   margin-right: 2px;
+                   vertical-align: middle;
+                }
+               a{
+                @extend %a;
+                color: #d71d32;
+                }
+            }   
+               
+               #loginbox{
+                   margin-left: 150px;
+                   @extend %left;
+                   width: 145.7px;
+                   height: 32px;
+                   line-height: 32px;
+                   list-style: none;
+                   .hi{
+                       width: 100%;
+                        height: 32px;
+                        line-height: 32px;
+                       font-size: 12px;
+                       background-color: #f4f4f4;
+                   }
+                   .loginbar{
+                    width: 100%;
+                    height: 32px;
+                    line-height: 32px;
+                   font-size: 12px;
+                       color: #8e8e8e;
+                       @extend %a;
+                   }
+                   .registbar{
+                    width: 100%;
+                    height: 32px;
+                    line-height: 32px;
+                   font-size: 12px;
+                       color: #8e8e8e;
+                       @extend %a;
+                   }
+               }
+               .dinglan{
+                   width: 572px;
+                   height: 32px;
+                   float: left;
+                    li{
+                        
+                        height: 32px;
+                        float: left;
+                        height: 32px;
+                        line-height: 32px;
+                        font-size: 12px;
+                    }
+               }
+            }
     }
 %tou{
     @extend %box1;
@@ -23,9 +141,10 @@ icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-s
 }
 
 #header {
-    @extend %box,%box1;
+    width: 1150x;
+    margin: 0 auto;
     height: 162px;
-    background: red;
+    background: #fff;
     margin-bottom: 10px;
         .title{
             @extend %box1;
@@ -51,11 +170,11 @@ icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-s
                 float: left;
             }
         }
-        .nav{
-            @extend %box1;
-            height: 46px;
-            background:#3a3a3a;
-        }   
+              .nav{
+                    @extend %box;
+                    height: 46px;
+                    background:#3a3a3a;
+                }  
 }
 #banner {
     @extend %box,%box1;
@@ -67,9 +186,25 @@ icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-s
             background: yellow;
         }
         .xiaotu{
-            @extend %box1;
+            width: 1148px;
             height: 54px;
             background: #3a3a3a;
+            margin-top: 6px;
+            ul{
+                width: 1148px;
+                height: 54px;
+                background: #ccc;
+                float: left;
+                padding-left: 2px;
+                
+               li{
+                   width: 138px;
+                   height: 54px;
+                   background: peru;
+                   padding: 0 2px;
+                   float: left;
+               } 
+            }
         }
 }
 #renqi{
@@ -78,6 +213,17 @@ icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-s
     background: blue;
         .tou{
             @extend %tou;
+            position: relative;
+            .hezi{
+                position: absolute;
+                top: 80px;
+                left: 422px;
+                width: 298px;
+                height: 32px;
+                border: 1px solid #000;
+                text-align: center;
+                line-height: 32px;
+            }
         }
 }
 #youxuan{
@@ -86,6 +232,17 @@ icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-s
     background: pink;
         .tou{
         @extend %tou;
+        position: relative;
+        .hezi{
+            position: absolute;
+            top: 80px;
+            left: 422px;
+            width: 298px;
+            height: 32px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 32px;
+        }
     }
 }
 #chaoliu-shang{
@@ -94,6 +251,17 @@ icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-s
     background: purple;
         .tou{
             @extend %tou;
+            position: relative;
+            .hezi{
+                position: absolute;
+                top: 80px;
+                left: 422px;
+                width: 298px;
+                height: 32px;
+                border: 1px solid #000;
+                text-align: center;
+                line-height: 32px;
+            }
         }
 }
 #chaoliu-xia{
@@ -102,6 +270,17 @@ icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-s
     background: purple;
         .tou{
             @extend %tou;
+            position: relative;
+            .hezi{
+                position: absolute;
+                top: 80px;
+                left: 422px;
+                width: 298px;
+                height: 32px;
+                border: 1px solid #000;
+                text-align: center;
+                line-height: 32px;
+            }
         }
 }
 #chaoliu-shang{
@@ -110,6 +289,17 @@ icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-s
     background: purple;
         .tou{
             @extend %tou;
+            position: relative;
+            .hezi{
+                position: absolute;
+                top: 80px;
+                left: 422px;
+                width: 298px;
+                height: 32px;
+                border: 1px solid #000;
+                text-align: center;
+                line-height: 32px;
+            }
         }
 }
 #fashion{
@@ -118,6 +308,17 @@ icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-s
     background: peru;
         .tou{
             @extend %tou;
+            position: relative;
+            .hezi{
+                position: absolute;
+                top: 80px;
+                left: 422px;
+                width: 298px;
+                height: 32px;
+                border: 1px solid #000;
+                text-align: center;
+                line-height: 32px;
+            }
         }
 }
 #chaomen{
@@ -126,16 +327,52 @@ icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-s
     background: indianred;
         .tou{
             @extend %tou;
+            position: relative;
+            .hezi{
+                position: absolute;
+                top: 80px;
+                left: 422px;
+                width: 298px;
+                height: 32px;
+                border: 1px solid #000;
+                text-align: center;
+                line-height: 32px;
+            }
         }
 }
 #newthing{
     @extend %box,%box1;
     height: 4348px;
     background: lightblue;
+    position: relative;
+    .tou{
+        @extend %tou;
+        position: relative;
+        .hezi{
+            position: absolute;
+            top: 80px;
+            left: 422px;
+            width: 298px;
+            height: 32px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 32px;
+        }
+    }
+        .hezi1{
+            position: absolute;
+            top:4274px;
+            left: 516px;
+            background: #000;
+            color: white;
+            text-align: center;
+            line-height:35px;
+            width: 120px;
+            height: 35px;
+        } 
 }
 #footer{
-    @extend %box,%box1;
+    @extend %box;
     height: 384px;
-    background: limegreen;
+    background: #000;
 }
-// @include sticky-footer(480px);
