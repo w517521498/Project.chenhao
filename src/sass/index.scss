@@ -1,0 +1,141 @@
+@import "compass/reset";
+@import "compass/layout";
+$page_width:1903px;
+icon-mail{background-image:url(img/sprite.scss.png?t=1576493576073);background-size:123px 122px;margin-top:-2px}.yoho-header .tool-wrapper .icon-mail{background-position:-107px -65px;width:16px;height:11px}.yoho-header .tool-wrapper .icon-phone{background-image:url(img/sprite.scss.png?t=1576493576073);background-position:0 -108px;background-size:123px 122px;width:10px;height:14px;margin-top:-2px}.yoho-header .tool-wrapper .yoho-cert-tip{margin-left:20px}.yoho-header .tool-wrapper .yoho-cert-tip 
+%box{
+    width:$page_width;
+    margin: 0 auto;
+    background: red;
+}
+%box1{
+    width: 1150px;
+    margin: 0 auto;
+}
+    #dingbu{
+        @extend %box1,%box;
+        height: 40px;
+        background: #f4f4f4;
+    }
+%tou{
+    @extend %box1;
+    height:152px;
+    background: #fff;
+}
+
+#header {
+    @extend %box,%box1;
+    height: 162px;
+    background: red;
+    margin-bottom: 10px;
+        .title{
+            @extend %box1;
+            height: 116px;
+            margin: 0 auto;
+            background: yellow;
+            .left{
+                width: 330px;
+                height: 116px;
+                background: #ccc;
+                float: left;
+            }
+            .middle{
+                width: 402px;
+                height: 116px;
+                background: green;
+                float: left;
+            }
+            .right{
+                width:418px;
+                height: 116px;
+                background: #ff0;
+                float: left;
+            }
+        }
+        .nav{
+            @extend %box1;
+            height: 46px;
+            background:#3a3a3a;
+        }   
+}
+#banner {
+    @extend %box,%box1;
+    height:510px;
+    background: red;
+        .datu{
+            @extend %box1;
+            height: 450px;
+            background: yellow;
+        }
+        .xiaotu{
+            @extend %box1;
+            height: 54px;
+            background: #3a3a3a;
+        }
+}
+#renqi{
+    @extend %box,%box1;
+    height: 658px;
+    background: blue;
+        .tou{
+            @extend %tou;
+        }
+}
+#youxuan{
+    @extend %box,%box1;
+    height: 616px;
+    background: pink;
+        .tou{
+        @extend %tou;
+    }
+}
+#chaoliu-shang{
+    @extend %box,%box1;
+    height: 996px;
+    background: purple;
+        .tou{
+            @extend %tou;
+        }
+}
+#chaoliu-xia{
+    @extend %box,%box1;
+    height: 996px;
+    background: purple;
+        .tou{
+            @extend %tou;
+        }
+}
+#chaoliu-shang{
+    @extend %box,%box1;
+    height: 996px;
+    background: purple;
+        .tou{
+            @extend %tou;
+        }
+}
+#fashion{
+    @extend %box,%box1;
+    height: 996px;
+    background: peru;
+        .tou{
+            @extend %tou;
+        }
+}
+#chaomen{
+    @extend %box,%box1;
+    height: 996px;
+    background: indianred;
+        .tou{
+            @extend %tou;
+        }
+}
+#newthing{
+    @extend %box,%box1;
+    height: 4348px;
+    background: lightblue;
+}
+#footer{
+    @extend %box,%box1;
+    height: 384px;
+    background: limegreen;
+}
+// @include sticky-footer(480px);

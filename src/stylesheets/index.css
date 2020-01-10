@@ -1,0 +1,238 @@
+/* line 5, D:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, D:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, D:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, D:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, D:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, D:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, D:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, D:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, D:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/index.scss */
+icon-mail {
+  background-image: url(img/sprite.scss.png?t=1576493576073);
+  background-size: 123px 122px;
+  margin-top: -2px;
+}
+
+/* line 4, ../sass/index.scss */
+.yoho-header .tool-wrapper .icon-mail {
+  background-position: -107px -65px;
+  width: 16px;
+  height: 11px;
+}
+
+/* line 4, ../sass/index.scss */
+.yoho-header .tool-wrapper .icon-phone {
+  background-image: url(img/sprite.scss.png?t=1576493576073);
+  background-position: 0 -108px;
+  background-size: 123px 122px;
+  width: 10px;
+  height: 14px;
+  margin-top: -2px;
+}
+
+/* line 4, ../sass/index.scss */
+.yoho-header .tool-wrapper .yoho-cert-tip {
+  margin-left: 20px;
+}
+
+/* line 4, ../sass/index.scss */
+.yoho-header .tool-wrapper .yoho-cert-tip
+#dingbu, .yoho-header .tool-wrapper .yoho-cert-tip
+#header, .yoho-header .tool-wrapper .yoho-cert-tip
+#banner, .yoho-header .tool-wrapper .yoho-cert-tip
+#renqi, .yoho-header .tool-wrapper .yoho-cert-tip
+#youxuan, .yoho-header .tool-wrapper .yoho-cert-tip
+#chaoliu-shang, .yoho-header .tool-wrapper .yoho-cert-tip
+#chaoliu-xia, .yoho-header .tool-wrapper .yoho-cert-tip
+#fashion, .yoho-header .tool-wrapper .yoho-cert-tip
+#chaomen, .yoho-header .tool-wrapper .yoho-cert-tip
+#newthing, .yoho-header .tool-wrapper .yoho-cert-tip
+#footer {
+  width: 1903px;
+  margin: 0 auto;
+  background: red;
+}
+
+/* line 10, ../sass/index.scss */
+#dingbu, #renqi .tou, #youxuan .tou, #chaoliu-shang .tou, #chaoliu-xia .tou, #fashion .tou, #chaomen .tou, #header, #header .title, #header .nav, #banner, #banner .datu, #banner .xiaotu, #renqi, #youxuan, #chaoliu-shang, #chaoliu-xia, #fashion, #chaomen, #newthing, #footer {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+/* line 14, ../sass/index.scss */
+#dingbu {
+  height: 40px;
+  background: #f4f4f4;
+}
+
+/* line 19, ../sass/index.scss */
+#renqi .tou, #youxuan .tou, #chaoliu-shang .tou, #chaoliu-xia .tou, #fashion .tou, #chaomen .tou {
+  height: 152px;
+  background: #fff;
+}
+
+/* line 25, ../sass/index.scss */
+#header {
+  height: 162px;
+  background: red;
+  margin-bottom: 10px;
+}
+/* line 30, ../sass/index.scss */
+#header .title {
+  height: 116px;
+  margin: 0 auto;
+  background: yellow;
+}
+/* line 35, ../sass/index.scss */
+#header .title .left {
+  width: 330px;
+  height: 116px;
+  background: #ccc;
+  float: left;
+}
+/* line 41, ../sass/index.scss */
+#header .title .middle {
+  width: 402px;
+  height: 116px;
+  background: green;
+  float: left;
+}
+/* line 47, ../sass/index.scss */
+#header .title .right {
+  width: 418px;
+  height: 116px;
+  background: #ff0;
+  float: left;
+}
+/* line 54, ../sass/index.scss */
+#header .nav {
+  height: 46px;
+  background: #3a3a3a;
+}
+
+/* line 60, ../sass/index.scss */
+#banner {
+  height: 510px;
+  background: red;
+}
+/* line 64, ../sass/index.scss */
+#banner .datu {
+  height: 450px;
+  background: yellow;
+}
+/* line 69, ../sass/index.scss */
+#banner .xiaotu {
+  height: 54px;
+  background: #3a3a3a;
+}
+
+/* line 75, ../sass/index.scss */
+#renqi {
+  height: 658px;
+  background: blue;
+}
+
+/* line 83, ../sass/index.scss */
+#youxuan {
+  height: 616px;
+  background: pink;
+}
+
+/* line 91, ../sass/index.scss */
+#chaoliu-shang {
+  height: 996px;
+  background: purple;
+}
+
+/* line 99, ../sass/index.scss */
+#chaoliu-xia {
+  height: 996px;
+  background: purple;
+}
+
+/* line 107, ../sass/index.scss */
+#chaoliu-shang {
+  height: 996px;
+  background: purple;
+}
+
+/* line 115, ../sass/index.scss */
+#fashion {
+  height: 996px;
+  background: peru;
+}
+
+/* line 123, ../sass/index.scss */
+#chaomen {
+  height: 996px;
+  background: indianred;
+}
+
+/* line 131, ../sass/index.scss */
+#newthing {
+  height: 4348px;
+  background: lightblue;
+}
+
+/* line 136, ../sass/index.scss */
+#footer {
+  height: 384px;
+  background: limegreen;
+}
