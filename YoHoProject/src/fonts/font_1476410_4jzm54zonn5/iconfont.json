@@ -1,0 +1,142 @@
+{
+  "id": "1476410",
+  "name": "今日头条",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "158337",
+      "name": "3点",
+      "font_class": "3dian",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "2254271",
+      "name": "列表",
+      "font_class": "liebiao",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
+      "icon_id": "2453093",
+      "name": "五角星",
+      "font_class": "xingzhuang60kaobei2",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "2940013",
+      "name": "右",
+      "font_class": "you",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "3353861",
+      "name": "评论",
+      "font_class": "comment",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "3685163",
+      "name": "加号",
+      "font_class": "mui-icon-add",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "6333671",
+      "name": "相机",
+      "font_class": "xiangji",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "7869668",
+      "name": "浏览历史",
+      "font_class": "liulanlishi",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "8096935",
+      "name": "拍摄",
+      "font_class": "paishe_A_Facet",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "8341991",
+      "name": "我 的",
+      "font_class": "wode",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "8508961",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "8537068",
+      "name": "V",
+      "font_class": "V",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "9746366",
+      "name": "火山小视频-1",
+      "font_class": "huoshanxiaoshipin-",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "9817627",
+      "name": "收 藏",
+      "font_class": "shoucang2",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "9886670",
+      "name": "点赞",
+      "font_class": "good_filled",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "10072902",
+      "name": "西瓜视频",
+      "font_class": "xigualogo_new_dacde",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "10434753",
+      "name": "我 的",
+      "font_class": "wode1",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "10742723",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "11060663",
+      "name": "搜索",
+      "font_class": "zu",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    }
+  ]
+}
