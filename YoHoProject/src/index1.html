@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../src/fonts/font_1607955_17ezua0cssh/iconfont.css">
     <link rel="stylesheet" href="../src/fonts/font_1607955_0exqug5u0wn6/iconfont.css">
     <link rel="stylesheet" href="../src/fonts/font_1607955_feleb9dykyw/iconfont.css">
+    <link rel="stylesheet" href="../src/fonts/font_1607955_5t5ldn2rrec/iconfont.css">
     <script src="../src/fonts/font_1607955_0exqug5u0wn6/iconfont.js"></script>
 </head>
 
@@ -69,7 +70,9 @@
                 </li>
                 <li class="yh">
                     <span class="tag-seprate"></span>
-                    <span class="iconfont"></span>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weixin"></use>
+                      </svg>
                     <a href="#" style="
                     color: #86bf4a;">关注有货</a>
                 </li>
@@ -117,9 +120,13 @@
                     <input type="text" placeholder="满399减100 最高减1000" class="hidden">
                         <span class="iconfont icon-zu"></span>
                 </form>
-                <a href="#">
+                <a href="#" class="show">
                     <span class="iconfont icon-gouwuche"></span>
                 </a>
+                <div class="car">
+                    <span class="iconfont icon-gouwuche1"></span>
+                    <a href="">您的购物车暂无商品</a>
+                </div>
                 <ul class="hot">
                     <li>
                         <a href="#">卫衣</a>
@@ -151,29 +158,83 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">品牌一览</a>
+                    <a href="#">品牌一览
+                        <span></span>
+                    </a>
                 </li>
                 <li class="fushi">
-                    <a href="#">服饰</a>
+                    <a href="#" class="fs">服饰
+                        <span class="liang"></span>
+                    </a>
+                    <div class="list">
+                        <div class="centercontent">
+                            <dl class="product-list">
+                                <dt><h3>上装</h3></dt>
+                                <dd><h3>上装</h3></dd>
+                                <dd><h3>上装</h3></dd>
+                                <dd><h3>上装</h3></dd>
+                                <dd><h3>上装</h3></dd>
+                                <dd><h3>上装</h3></dd>
+                                <dt><h3>下装</h3></dt>
+                                <dd><h3>休闲裤</h3></dd>
+                                <dd><h3>牛仔裤</h3></dd>
+                            </dl>
+                            <dl class="product-list">
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                            </dl>
+                            <dl class="product-list">
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                                <dl><h3>运动裤</h3></dl>
+                            </dl>
+                        <div class="show-tu">
+                                <a href="#"><img src="https://img10.static.yhbimg.com/yhb-img01/2019/09/06/15/01b9fb0416a35473b24f8fd2aae06a6ec8.jpg?imageView2/2/w/337/h/250/q/90"></a>
+                                <a class="title" href="#">IN季新品全面开售</a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li class="xielv">
-                    <a href="#">鞋履</a>
+                    <a href="#">鞋履
+                        <span class="liang"></span>
+                    </a>
                 </li>
                 <li class="baozhuang">
-                    <a href="#">包装</a>
+                    <a href="#">包装
+                        <span class="liang"></span>
+                    </a>
                 </li>
                 <li class="peishi">
                     <a href="#">配饰 · 其他
+                        <span></span>
                     </a>
                 </li>
                 <li class="hang">
-                    <a href="#">逛</a>
+                    <a href="#">逛
+                        <span class="yi"></span>
+                    </a>
                 </li>
                 <li class="sale">
-                    <a href="#">SALE</a>
+                    <a href="#">SALE
+                        <span class="san"></span>
+                    </a>
                 </li>
                 <li class="xieyi">
-                    <a href="#">证照/协议</a>
+                    <a href="#">证照/协议
+                        <span class="si"></span>
+                    </a>
                 </li>
             </nav>
         </div>
@@ -184,7 +245,7 @@
         <div class="datu">
             <!--             大图                    -->
             <ul class="bpic">
-                <li class="show"><img src="../src/images/010c00d00ac83fcbe0562c1ad4797b8b47.jpg" alt=""></li>
+                <li style="opacity: 1;"><img src="../src/images/010c00d00ac83fcbe0562c1ad4797b8b47.jpg" alt=""></li>
                 <li><img src="../src/images/011cd8b3c76368226775ebad5ff4640c26.jpg" alt=""></li>
                 <li><img src="../src/images/01cc273f35b2d304969d6fa82493779c28.jpg" alt=""></li>
                 <li><img src="../src/images/01a2b3f6e912da9bac9f7d7dc729571771.jpg" alt=""></li>
@@ -199,11 +260,11 @@
             <a href="javascript:;"id="right">
                 <span class="iconfont icon-right"></span>
             </a>
-            <!--             小图                -->
+        </div>
+         <!--             小图                -->
+         <div class="xiaotu">
             <ul class="spic">
-                <li class="active">
-                    <img src="../src/images/01ff0d41611fbd03b5e3d42b3c041dcd8a.png" alt="">
-                </li>
+                <li><img src="../src/images/01ff0d41611fbd03b5e3d42b3c041dcd8a.png" alt=""></li>
                 <li><img src="../src/images/01687e2e1c9dce628e430a030e30d98bb1.png" alt=""></li>
                 <li><img src="../src/images/012ca6d990dcf776e264d38ababd9651c4.png" alt=""></li>
                 <li><img src="../src/images/01b4e9b073ebff2860761d2bda15275606.png" alt=""></li>
@@ -219,11 +280,191 @@
         <div class="tou">
             <div class="hezi">人气单品</div>
         </div>
+        <ul class="rq">
+            <li>
+                <a href="#">
+                    <img src="../src/images/01382e658c2a61a9407acdbe6a0f0ae612.png" alt="">
+                </a>
+            </li>
+            <li class="guodong">
+                <a href="#">
+                    <img src="../src/images/01d46a6050e661d10d95b6fd37df2e960a.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../src/images/01382e658c2a61a9407acdbe6a0f0ae612.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../src/images/01382e658c2a61a9407acdbe6a0f0ae612.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../src/images/01382e658c2a61a9407acdbe6a0f0ae612.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../src/images/01382e658c2a61a9407acdbe6a0f0ae612.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../src/images/01382e658c2a61a9407acdbe6a0f0ae612.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../src/images/01382e658c2a61a9407acdbe6a0f0ae612.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../src/images/01382e658c2a61a9407acdbe6a0f0ae612.png" alt="">
+                </a>
+            </li>
+            <li class="guodong">
+                <a href="#">
+                    <img src="../src/images/015349a27c3e3a4f793dcfff42140b5a35.png" alt="">
+                </a>
+            </li>
+        </ul>
     </div>
     <!--             优选品牌                -->
     <div id="youxuan">
         <div class="tou">
             <div class="hezi">优选品牌</div>
+        </div>
+        <div class="banner1">
+            <ul class="lun1">
+                <li>
+                    <a href="#">
+                        <img src="../src/images/01f58bfde1038be7ced69c676c3f26a084.png" alt="">
+                    </a>
+                </li>
+                <li class="middle">
+                    <a href="#">
+                        <img src="../src/images/01c0750dd88a0f7731a83376e4efd821c6.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../src/images/01b5f2025f2b1809726ba1d357a84680e7.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../src/images/010c8b027d6a6e3e9109b9d7632d6605b1.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../src/images/01d94b21cc88bfd3dc3800de73fa82cd60.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../src/images/018e3487aff8d7d4875abe7f44310e8f38.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="paizi">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/019164ac0761926691b7eec3668b90ca8f.png" alt="">
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
     <!--             潮流上装                -->
@@ -231,7 +472,103 @@
         <div class="tou">
             <div class="hezi">潮流上装</div>
         </div>
-    </div>
+        <div class="shang">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../src/images/017be7cc88b521b7ebbcd6a71f4349eb7b.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../src/images/016f0b7a84984d2d3e3d1d9e71b8ddc86a.png" alt="" id="lazy">
+                    </a>
+                </li>
+                <li class="zhong">
+                    <a href="">
+                        <img src="https://img10.static.yhbimg.com/yhb-img01/2019/12/25/14/014718d031afbe50322ca779d802cceaa8.jpg?imageView2/2/w/378/h/248" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/0118b551411cfb13e466d6bfddbf11a83e.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/0118b551411cfb13e466d6bfddbf11a83e.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/0118b551411cfb13e466d6bfddbf11a83e.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <div class="yufulan">
+                        <a href="#" title="卫衣" target="_blank">卫衣</a>
+                        <a href="#" title="羽绒服" target="_blank">羽绒服</a>
+                        <a href="#" title="棉衣" target="_blank">棉衣</a>
+                        <a href="#"title="夹克" target="_blank">夹克</a>
+                        <a href="#" title="毛衣/针织" target="_blank">毛衣/针织</a>
+                        <a href="#" title="大衣" target="_blank">大衣</a>
+                        <a href="#" title="viishow" target="_blank">viishow</a>
+                        <a href="#" title="CHAMPION" target="_blank">CHAMPION</a>
+                        <a href="#" title="gxg.jeans" target="_blank">gxg.jeans</a>
+                        <a href="#" title="Dickies" target="_blank">Dickies</a>
+                        <a href="#" title="黑鲸" target="_blank">黑鲸</a>
+                        <a href="#" title="SMG" target="_blank">SMG</a>
+                    </div>
+                </li>
+                <li class="zhong">
+                    <a href="">
+                        <img src="../src/images/01b42113c953de40339fe873291f5a70e3.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/0118b551411cfb13e466d6bfddbf11a83e.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/0118b551411cfb13e466d6bfddbf11a83e.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/0118b551411cfb13e466d6bfddbf11a83e.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="xia">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../src/images/014b18ad13ea705791eb5c9bc6250f7126.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/014b18ad13ea705791eb5c9bc6250f7126.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/014b18ad13ea705791eb5c9bc6250f7126.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/014b18ad13ea705791eb5c9bc6250f7126.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../src/images/014b18ad13ea705791eb5c9bc6250f7126.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>    </div>
     <!--             潮流下装               -->
     <div id="chaoliu-xia">
         <div class="tou">
@@ -254,6 +591,9 @@
     <div id="newthing">
         <div class="tou">
             <div class="hezi">新品上架</div>
+        </div>
+        <div class="xuan">
+           
         </div>
         <div class="wei">
             <div class="hezi1">查看更多</div>
@@ -498,7 +838,21 @@
             </div>
         </div>
     </div>
+    <div id="louti">
+        <div class="boxtop">
+        </div>
+        <div class="return-top">
+            <a href="#">
+                <span class="iconfont icon-top"></span>
+            </a>
+        </div>
+    </div>
     <script src="../src/script/lunbo.js"></script>
+    <script src="../src/script/jquery.js"></script>
+    <script src="../src/script/louti.js"></script>
+    <script src="../src/script/nav.js"></script>
+    <script src="../src/script/tool.js"></script>
+    <script src="../src/script/index.js"></script>
 </body>
 
 </html>

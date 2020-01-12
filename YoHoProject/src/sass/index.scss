@@ -133,6 +133,9 @@ li{
                    }
                    .yh{
                        width: 90px;
+                       .icon{
+                        font-size: 16px;
+                       }
                    }
                    .sj{
                        width: 72px;
@@ -200,15 +203,7 @@ li{
                             background-size: 123px 122px;
                             margin-top: -2px;
                          }
-                         .icon-weixin{
-                            display: inline-block;
-                            vertical-align: middle;
-                            line-height: 30px;
-                            font-family: iconfont!important;
-                            font-size: 16px;
-                            font-style: normal;
-                            text-decoration: none;
-                         }
+                         
                          .icon-phone{
                             display: inline-block;
                             vertical-align: middle;
@@ -308,15 +303,48 @@ li{
                         }
                     }
                     
-                }.icon-gouwuche{
+                }
+                .show{
                     position: absolute;
-                    width: 27px;
-                    height: 30px;
-                    font-size: 30px;
                     left: 340px;
                     top:62px;
-                    
-            }
+                    .icon-gouwuche{
+                        width: 27px;
+                        height: 30px;
+                        font-size: 30px;
+                        &:hover{
+                            color: red;
+                            width: 40px;
+                       
+                            .car{ 
+                                display: block;
+                                
+                            }
+                        }
+                    }
+                
+                }
+                .car{
+                width: 380px;
+                height: 500px;
+                display: none;
+                position: absolute;
+                top: 94px;
+                left: 22px;
+                z-index: 99;
+                background: #f8f8f8;
+                    .icon-gouwuche1{
+                    font-size: 100px;
+                    vertical-align: middle;
+                    line-height: 500px;
+                    width: 142px;
+                    height: 134px;
+                    }
+                }
+                .show:hover+.car{ 
+                    display: block;
+                }
+            
         }
     }
               .daohang{
@@ -328,8 +356,86 @@ li{
                         margin: 0 auto;
                         .fushi{
                             width:74px ;
+                            position: relative;
+                            .list{
+                                width: 1903px;
+                                height: 410px;
+                                box-sizing: border-box;
+                                position: absolute;
+                                left: -660px;
+                                top: 38px;
+                                padding: 30px 0;
+                                background-color: #f8f8f8;
+                                z-index: 99;
+                                display: none;
+                                .centercontent{
+                                    width: 1150px;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    .show-tu{
+                                        box-sizing: border-box;
+                                        padding-left: 19px;
+                                        padding-right: 19px;
+                                        width: 337px;
+                                        height: 250px;
+                                        float: right;
+                                        a{  
+                                            width: 337px;
+                                            height: 250px;
+                                            font-size: 14px;
+                                            color: #fff;
+                                            font-size: 14px;
+                                            line-height: 14px;
+                                            display: inline-block;
+                                            top: 31px;
+                                            left: 1198px;
+                                        }
+                                        .title{
+                                            width: 116px;
+                                            margin-top: 40px;
+                                            text-align: center;
+                                            font-size: 14px;
+                                            color: #000;
+                                            overflow: hidden;
+                                            top: 298px;
+                                            height: 13px;
+                                            right: 370px;
+                                            
+                                        }
+                                    }
+                                    .product-list{
+                                        float: left;
+                                        width: 278px;
+                                        height: 352px;
+                                        box-sizing: border-box;
+                                        border-left: 1px solid #ccc;
+                                        padding: 0 50px;
+                                        dt{
+                                            width: 180px;
+                                            padding-bottom: 10px;
+                                            border-bottom: 1px solid #000;
+                                            line-height: 18px;
+                                            margin-bottom: 20px;
+                                        }
+                                        dd{
+                                            line-height: 14px;
+                                            height: 14px;
+                                            margin-bottom: 24px;
+                                        }
+                                    }
+                                }
+                            }
                         }
                         .xielv{
+                            // height: 410px;
+                            // box-sizing: border-box;
+                            // position: absolute;
+                            // left: 0;
+                            // top: 38px;
+                            // display: none;
+                            // padding: 30px 0;
+                            // background-color: #f8f8f8;
+                            // z-index: 900;
                             width: 74px;
                         }
                         .baozhuang{
@@ -354,24 +460,50 @@ li{
                             margin-right: 36px;
                             float: left;
                             padding-right: 2px;
+                            position: relative;
                                 a{
                                     color: #fff;
                                     font-size: 14px;
                                     line-height: 14px;
-                                    display: inline-block;
-                                    position: relative;
+                                    position: absolute;
+                                    bottom: 6px;
+                                    left: 1px;
                                     span{
                                         width: 56px;
-                                        height: 5px;
+                                        height: 2px;
                                         background: white;
-                                        position: absolute;
-                                        bottom: -15px;
-                                        left: 1px;
                                         display: none;
                                     }
+                                    .liang{
+                                        width: 25px;
+                                        height: 2px;
+                                        background: white;
+                                        position: absolute;
+                                      
+                                    }
+                                    .san{
+                                        width: 34px;
+                                        height: 2px;
+                                        background: white;
+                                        position: absolute;
+                                        
+                                    }
+                                    .yi{
+                                        width: 10px;
+                                        height: 2px;
+                                        background: white;
+                                        position: absolute;
+                                        
+                                    }
+                                    .si{
+                                        width: 60px;
+                                        height: 2px;
+                                        background: white;
+                                        position: absolute;
+                                      
+                                    }
                                 }
-                                
-                                .daohang nav li:hover{
+                                .daohang nav li a :hover span{
                                     display:block ;
                                 }
                         }
@@ -441,19 +573,14 @@ li{
     height:510px;
     background: red;
         .datu{
-            @extend %box1;
+            width: 1150px;
             height: 450px;
-            background: yellow;
-            float: left;
             overflow: hidden;
             position: relative;
-            // .bpic{
-            //     float: left;
-                
-                // li{
-                //     width: 1150px;
-                //     height: 450px;
-                // }
+            margin: 0 auto;
+            
+          
+
                 #left{
                     position: absolute;
                     top: 50%;
@@ -479,42 +606,49 @@ li{
                     background: #fff;
                     opacity: .55;
                 }
-                .spic{
-                    width: 1148px;
-                    height: 54px;
-                    background: #ccc;
-                    float: left;
-                    margin-top: 6px;
-                    padding-left: 2px;
-                    
-                   li{
-                       width: 138px;
-                       height: 54px;
-                       background: peru;
-                       padding: 0 2px;
-                       float: left;
-                   } 
+                .bpic{
+                    position: relative;
+                    li{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        transition: all 2s;
+                        img{
+                            width: 1150px;
+                            height: 450px;
+                            display: block;
+                        }
+                    }
                 }
-                li{
-
-                }
-            // }
-            .bpic li.show{
-                display: block;
+        }
+        .xiaotu{
+            width: 1148px;
+            height: 54px;
+            background: #3a3a3a;
+            margin-top: 6px;
+            padding-left: 2px;
+            margin-left: 0px;
+            .spic{
+                width: 1148px;
+                height: 54px;
+                background: #ccc;
+                float: left;
+               li{
+                   width: 139px;
+                   height: 54px;
+                   background: peru;
+                   padding: 0 2px;
+                   float: left;
+                   
+               } 
             }
         }
-        // .xiaotu{
-        //     width: 1148px;
-        //     height: 54px;
-        //     background: #3a3a3a;
-        //     margin-top: 6px;
-            
-        // }
 }
 #renqi{
     @extend %box,%box1;
     height: 658px;
-    background: blue;
+    background: white;
         .tou{
             @extend %tou;
             position: relative;
@@ -529,12 +663,28 @@ li{
                 line-height: 32px;
             }
         }
+        .rq{
+            width: 1150px;
+            height: 502px;
+            float: left;
+            li{
+                width: 186px;
+                height: 246px;
+                padding-right: 5px;
+                padding-bottom: 8px;
+                float: left;
+            }
+            .guodong{
+                width: 378px;
+                height: 246px;
+            }
+        }
 }
 #youxuan{
     @extend %box,%box1;
     height: 616px;
     background: pink;
-        .tou{
+    .tou{
         @extend %tou;
         position: relative;
         .hezi{
@@ -548,10 +698,52 @@ li{
             line-height: 32px;
         }
     }
+    .banner1{
+        width: 1150px;
+        height: 176px;
+        .lun1{
+            width: 1150px;
+            height: 176px;
+            position: relative;
+            overflow: hidden;
+            li{
+                width: 378px;
+                height: 176px;
+                float: left;
+                // position: absolute;
+                // padding-right: 5px;
+                // top: 176px;
+                // left: 378px;
+                // img{
+
+                // }
+            }
+            .middle{
+                padding:0 8px;
+            }
+            
+        }
+    }
+    .paizi{
+        width: 1200px;
+        height: 276px;
+        ul{
+            width: 100%;
+            height:276px;
+            margin-top: 6px;
+            li{
+                width: 186px;
+                height: 86px;
+                float: left;
+                margin: 8px 7px 0 0;
+            }
+            
+        }
+    }
 }
 #chaoliu-shang{
     @extend %box,%box1;
-    height: 996px;
+    height: 974px;
     background: purple;
         .tou{
             @extend %tou;
@@ -565,12 +757,68 @@ li{
                 border: 1px solid #000;
                 text-align: center;
                 line-height: 32px;
+            }
+        }
+        .shang{
+            width: 1200px;
+            height: 508px;
+            ul{
+                width: 1150px;
+                height: 508px;
+                li{
+                    width: 188px;
+                    height: 250px;
+                    float: left;
+                    margin: 6px 4px 0 0;
+                    .yufulan{
+                        height: 228px;
+                        padding: 10px 0;
+                        background-color: #f8f8f8;
+                        overflow: hidden;
+                        a{
+                            float: left;
+                            width: 50%;
+                            height: 38px;
+                            line-height: 38px;
+                            font-size: 14px;
+                            text-align: center;
+                            color: #000;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                .zhong{
+                    width: 376px;
+                    height: 250px;
+                    img{
+                        width: 376px;
+                        height: 250px;
+                    }
+                }
+                #lazy{
+                    margin-top: 4   px;
+                }
+            }
+        }
+        .xia{
+            width: 1150px;
+            height: 328px;
+            ul{
+                width: 100%;
+                height: 306px;
+                margin-top: 8px;
+                li{
+                    width: 222px;
+                    height: 298px;
+                    float: left;
+                    padding: 8px 6px 0 0;
+                }
             }
         }
 }
 #chaoliu-xia{
     @extend %box,%box1;
-    height: 996px;
+    height: 974px;
     background: purple;
         .tou{
             @extend %tou;
@@ -589,7 +837,7 @@ li{
 }
 #chaoliu-shang{
     @extend %box,%box1;
-    height: 996px;
+    height: 974px;
     background: purple;
         .tou{
             @extend %tou;
@@ -608,7 +856,7 @@ li{
 }
 #fashion{
     @extend %box,%box1;
-    height: 996px;
+    height: 974px;
     background: peru;
         .tou{
             @extend %tou;
@@ -627,7 +875,7 @@ li{
 }
 #chaomen{
     @extend %box,%box1;
-    height: 996px;
+    height: 974px;
     background: indianred;
         .tou{
             @extend %tou;
@@ -661,6 +909,44 @@ li{
             border: 1px solid #000;
             text-align: center;
             line-height: 32px;
+        }
+    }
+    .xuan{
+        width: 1152px;
+        height: 4028px;
+        ul{
+            width: 1152px;
+            height: 4028px;
+            li{
+                width: 222px;
+                height: 356px;
+                float: left;
+                padding: 0 8px 52px 0;
+                img{
+                    width: 222px;
+                    height: 298px;
+                }
+                h4{  
+                    width: 100%;
+                    height: 18px;
+                    margin-top: 16px;
+                    line-height: 1.5;
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-size: 12px;
+                    text-align: center;
+                }
+                p{  
+                    width: 100%;
+                    height:22px ;
+                    margin-top: 5px;
+                    line-height: 22px;
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
         }
     }
         .hezi1{
@@ -885,5 +1171,40 @@ li{
 
         
             
+    }
+}
+#louti{
+    position: fixed;
+    width: 60px;
+    left: 50%;
+    bottom: 20px;
+    margin-left: 595px;
+    z-index: 4;
+    // .boxtop{
+    //     width: 71px;
+    //     position: relative;
+    //     left: -11px;
+    //     text-align: right;
+    //     .qrcode-img{
+    //         width: 28px;
+    //         height: 28px;
+    //         background-image: url(img/sprite.scss.png?t=1576493576073);
+    //         background-position: -71px 0;
+    //         background-size: 123px 122px;
+    //         display: inline-block;
+    //         margin-top: 16px;
+    //     }
+    //}
+    .return-top{
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        background: #000;
+        opacity: .5;
+        cursor: pointer;
+        margin-top: 20px;
+
     }
 }
