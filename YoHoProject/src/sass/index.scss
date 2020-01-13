@@ -142,6 +142,40 @@ li{
                    }
                    .kf{
                        width: 82px;
+                    //    float: left;
+                    //     padding-right: 10px;
+                        position: relative; 
+                    .down{
+                        top: 32px;
+                        margin-left: 1px;
+                        width: 88px;
+                        position: absolute;
+                        background-color: #eaeceb;
+                        z-index: 100;
+                        display: none;
+                        li{
+                            float: none;
+                            padding: 0;
+                            position: relative;
+                            width: 88px;
+                            height: 33px;
+                            border-top: 1px solid #c9c9c9;
+                            box-sizing: border-box;
+                            line-height: 33px;
+                            text-align: center;
+                            a{
+                                display: inline-block;
+                                width: 88px;
+                                height: 33px;
+                                line-height: 33px;
+                                box-sizing: border-box;
+                                color: #8e8e8e;                         
+                            }                     
+                        }
+                    }
+                    // .kf .fw:hover .down{
+                    //     display: block;
+                    // }
                    }
                     li{
                         width: 80px;
@@ -334,11 +368,14 @@ li{
                 z-index: 99;
                 background: #f8f8f8;
                     .icon-gouwuche1{
-                    font-size: 100px;
+                    font-size: 200px;
                     vertical-align: middle;
                     line-height: 500px;
                     width: 142px;
                     height: 134px;
+                    position: absolute;
+                    left: 140px;
+                    top: 0px;
                     }
                 }
                 .show:hover+.car{ 
@@ -718,7 +755,7 @@ li{
 
                 // }
             }
-            .middle{
+            .middle1{
                 padding:0 8px;
             }
             
@@ -852,6 +889,9 @@ li{
                 text-align: center;
                 line-height: 32px;
             }
+        }
+        .shang{
+
         }
 }
 #fashion{
@@ -1131,9 +1171,6 @@ li{
         background: #000;
         margin:0 auto;
         .content2{
-            // width: 1150px;
-            // height: 46px;
-            // line-height: 46px;
             ul{
                 width:1150px;
                 height:48px;
@@ -1180,21 +1217,6 @@ li{
     bottom: 20px;
     margin-left: 595px;
     z-index: 4;
-    // .boxtop{
-    //     width: 71px;
-    //     position: relative;
-    //     left: -11px;
-    //     text-align: right;
-    //     .qrcode-img{
-    //         width: 28px;
-    //         height: 28px;
-    //         background-image: url(img/sprite.scss.png?t=1576493576073);
-    //         background-position: -71px 0;
-    //         background-size: 123px 122px;
-    //         display: inline-block;
-    //         margin-top: 16px;
-    //     }
-    //}
     .return-top{
         width: 60px;
         height: 60px;

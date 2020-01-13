@@ -1,0 +1,654 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户注册</title>
+    <meta name='description'
+        content="【YOHO!BUY有货】，年轻人潮流购物中心，潮流商品购物网站。作为YOHO!旗下的购物平台，汇集了全球潮流时尚商品和国内流行商品，★全场品牌正品保证，支持货到付款★" />
+    <meta name='keyword' content="潮流,时尚潮流,潮流服饰,潮流购物网,潮流网站">
+    <link rel="stylesheet" href="stylesheets/cartlist.css">
+    <link rel="stylesheet" href="../src/fonts/font_1607955_feleb9dykyw/iconfont.css">
+</head>
+<body>
+    <div class="simple-header">
+        <div class="header-inner clearfix">
+            <h2 class="logo">
+                <a href="#">
+                    <img src="https://static.yohobuy.com/newheader/img/logo_e.png?imageView2/2/interlace/1/q/75" alt="">
+                </a>
+            </h2>
+            <ul class="header-tool  clearfix">
+                <li><span>Hi~</span>&nbsp;<a href="#">[请登录]</a>&nbsp;<a href="//www.yohobuy.com/reg.html">[免费注册]</a></li>
+                <li class="tool-options">
+                    <span><a href="#">MY有货</a></span>
+                    <span class="iconfont icon-jiantou"></span>
+                    <div class="tool-select" style="display: none;">
+                        <a href="#">我的收藏</a>
+                        <a href="#">优惠券</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">订单中心</a>
+                </li>
+                <li class="">
+                    <span><a href="#">客户服务</a></span>
+                    <span class="iconfont icon-jiantou"></span>
+                    <div class="tool-select" style="display: none;">
+                        <a href="#">在线客服</a>
+                        <a href="#">帮助中心</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="container" class="cart">
+        <!--全部商品哪一行-->
+        <div class="cart-top">
+            <div class="cart-top-left">
+                <a href=""><em>全部商品</em></a>
+            </div>
+            <div class="footline">
+                <div class="line"></div>
+            </div>
+        </div>
+        <!--包裹购物车-->
+        <div class="cart-wrap">
+            <div class="cartmain">
+                <div class="cart-thead">
+                    <div class="cart-col t-checkbox">
+                        <div class="cart-checkbox">
+                            <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                        </div>
+                    </div>
+                    <div class="cart-col t-goods">商品</div>
+                    <div class="cart-col t-props"></div>
+                    <div class="cart-col t-prices">单价(元)</div>
+                    <div class="cart-col t-quantity">数量</div>
+                    <div class="cart-col t-sum">小计(元)</div>
+                    <div class="cart-col t-action">操作</div>
+                </div>
+                <div id="cart-list">
+                    <div class="cart-item-list">
+                        <div class="cart-tbody">
+                            <div class="item-list">
+                                <!-- 商品渲染模块 -->
+                                <!-- <div class="goods-item goods-item-sele">
+                                    <div class="goods-info">
+                                        <div class="cell b-checkbox">
+                                            <div class="cart-checkbox">
+                                                <input type="checkbox" checked="" name="" id="" value="" />
+                                                <span class="line-circle"></span>
+                                            </div>
+                                        </div>
+                                        <div class="cell b-goods">
+                                            <div class="goods-name">
+                                                <div class="goods-pic">
+                                                    <a href=""><img src="" alt="" /></a>
+                                                </div>
+                                                <div class="goods-msg">
+                                                    <div class="goods-d-info">
+                                                        <a href="">Apple iMac 27英寸一体机（Core i5
+                                                            处理器/8GB内存/1TB存储/2GB独显/Retina 5K屏 MK462CH/A）</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cell b-price">
+                                            <strong>13488.00</strong>
+                                        </div>
+                                        <div class="cell b-quantity">
+                                            <div class="quantity-form">
+                                                <a class="quantity-down" href="javascript:void(0)">-</a>
+                                                <input type="text" value="1" />
+                                                <a class="quantity-add" href="javascript:void(0)">+</a>
+                                            </div>
+                                        </div>
+                                        <div class="cell b-sum">
+                                            <strong>13488.00</strong>
+                                        </div>
+                                        <div class="cell b-action">
+                                            <a href="javascript:void(0)">删除</a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cart-floatbar">
+                <div class="operation">
+                    <a href="javascript:void(0)">删除选中的商品</a>
+                </div>
+                <div class="toolbar-right">
+                    <div class="btn-area">
+                        <a href=""></a>
+                    </div>
+                    <div class="price-sum">
+                        <span class="txt">总价（不含运费）：</span>
+                        <span class="totalprice">￥0.00</span>
+                        <span class="txt">已节省：</span>
+                        <span class="totalsave">-￥0.00</span>
+                    </div>
+                    <div class="amount-sum">
+                        已选择
+                        <em>0</em> 件商品
+                        <b></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="hei1">
+            <ul>
+                <li class="zhengpin">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhengpin"></use>
+                      </svg>
+                    <span class="hundred">100%</span>
+                    <span class="word">品牌正品</span>
+                </li>
+                <li class="tuihuo">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-tiantuihuo"></use>
+                      </svg>
+                    <span class="hundred">7天</span>
+                    <span class="word">品牌正品</span>
+                </li>
+                <li class="zaixian">
+                    
+                    <span class="hundred">便携</span>
+                    <span class="word">在线客服</span>
+                </li>
+            </ul>
+        </div>
+        <div class="hei2">
+            <div class="content">`
+                <ul>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hei3">
+            <div class="content1">
+                <div class="left-pic">
+                    <a href="#">
+                        <img src="./images/未标题-1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../src/images/未标题-2.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../src/images/未标题-3.png" alt="">
+                    </a>
+                </div>
+                <p class="link">
+                    <a href="#" rel="">返回首页</a>
+                    <span>|</span>
+                    <a href="#" rel="">YOHO!BUY 有货</a>
+                    <span>|</span>
+                    <a href="#" rel="">新力传媒</a>
+                    <span>|</span>
+                    <a href="#" rel="">联系我们</a>
+                    <span>|</span>
+                    <a href="#" rel="">商家入驻</a>
+                    <span>|</span>
+                    <a href="#" rel="">隐私条款</a>
+                    <span>|</span>
+                    <a href="#" rel="">友情链接</a>
+                    <span>|</span>
+                    <a href="#">潮流品牌大全</a>
+                    <span>|</span>
+                    <a href="#">潮流品类大全</a>
+                    <span>|</span>
+                    <a href="#">潮流产品大全</a>
+                    <span>|</span>
+                    <a href="#">潮流资讯</a>
+                    <span>|</span>
+                    <a href="#">穿衣搭配(男生版)</a>
+                    <span>|</span>
+                    <a href="#">穿衣搭配(女生版)</a>
+                    <span>|</span>
+                    <a href="#">潮流人气</a>
+                    <span>|</span>
+                    <a href="#">潮流潮品</a>
+                    <span>|</span>
+                    <a href="#">潮流视频</a>
+                    <span>|</span>
+                    <a class="police" >
+                        <img src="../src/images/未标题-4.png" alt="">
+                        苏公网安备 32010502010132号</a>
+                    <span>|</span>
+                    <a target="_blank" href="#" rel="">出版物经营许可证</a>
+                    <span>|</span>
+                    <a target="_blank" href="#" rel="">苏B2-20120395</a>
+                    <span>|</span>
+                    <a target="_blank" href="#" rel="">食品经营许可证</a>
+                </p>
+            </div>
+            <div class="copyright">
+                <p>
+                    CopyRight © 2007-2020 南京新与力文化传播有限公司
+                    <a class="six" href="#" target="_blank" rel="nofollow">苏ICP备09011225号</a>
+                    NewPower Co. 版权所有 江苏省南京市建邺区嘉陵江东街18号南京国家广告产业园5栋17，18楼 025-87781000
+                </p>
+            </div>
+        </div>
+        <div class="hei4">
+            <div class="content2">
+                    <ul class="clear">
+                            <li class="friend"><a href="#">友情链接:</a></li>
+                            <li class="h1"><a href="#" target="_blank" class="huo1">有货</a></li>
+                            <li><a href="#" target="_blank">时尚品牌网</a></li>
+                            <li><a href="#" target="_blank">服装品牌</a></li>
+                            <li><a href="#" target="_blank">拍婚纱照</a></li>
+                            <li><a href="#" target="_blank">搜好货网</a></li>
+                            <li><a href="#" target="_blank">手表知识</a></li>
+                            <li><a href="#" target="_blank">丽人时尚网</a></li>
+                            <li><a href="#" target="_blank">公司评价</a></li>
+                            <li><a href="#" target="_blank">商品百科</a></li>
+                            <li><a href="#" target="_blank">免费试用</a></li>
+                            <li><a href="#" target="_blank">女装批发拿货</a></li>
+                            <li><a href="#" target="_blank" class="zuoyi">佐卡伊</a></li>
+                            <li><a href="#" target="_blank">品牌服装网</a></li>
+                            <li><a href="#" target="_blank">时尚女人网</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery.js"></script>
+    <script src="script/tool.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <div class="hei1">
+            <ul>
+                <li class="zhengpin">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhengpin"></use>
+                      </svg>
+                    <span class="hundred">100%</span>
+                    <span class="word">品牌正品</span>
+                </li>
+                <li class="tuihuo">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-tiantuihuo"></use>
+                      </svg>
+                    <span class="hundred">7天</span>
+                    <span class="word">品牌正品</span>
+                </li>
+                <li class="zaixian">
+                    
+                    <span class="hundred">便携</span>
+                    <span class="word">在线客服</span>
+                </li>
+            </ul>
+        </div>
+        <div class="hei2">
+            <div class="content">`
+                <ul>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新手专区</span>    
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                        <p>
+                            <span>新手专区</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hei3">
+            <div class="content1">
+                <div class="left-pic">
+                    <a href="#">
+                        <img src="./images/未标题-1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../src/images/未标题-2.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../src/images/未标题-3.png" alt="">
+                    </a>
+                </div>
+                <p class="link">
+                    <a href="#" rel="">返回首页</a>
+                    <span>|</span>
+                    <a href="#" rel="">YOHO!BUY 有货</a>
+                    <span>|</span>
+                    <a href="#" rel="">新力传媒</a>
+                    <span>|</span>
+                    <a href="#" rel="">联系我们</a>
+                    <span>|</span>
+                    <a href="#" rel="">商家入驻</a>
+                    <span>|</span>
+                    <a href="#" rel="">隐私条款</a>
+                    <span>|</span>
+                    <a href="#" rel="">友情链接</a>
+                    <span>|</span>
+                    <a href="#">潮流品牌大全</a>
+                    <span>|</span>
+                    <a href="#">潮流品类大全</a>
+                    <span>|</span>
+                    <a href="#">潮流产品大全</a>
+                    <span>|</span>
+                    <a href="#">潮流资讯</a>
+                    <span>|</span>
+                    <a href="#">穿衣搭配(男生版)</a>
+                    <span>|</span>
+                    <a href="#">穿衣搭配(女生版)</a>
+                    <span>|</span>
+                    <a href="#">潮流人气</a>
+                    <span>|</span>
+                    <a href="#">潮流潮品</a>
+                    <span>|</span>
+                    <a href="#">潮流视频</a>
+                    <span>|</span>
+                    <a class="police" >
+                        <img src="../src/images/未标题-4.png" alt="">
+                        苏公网安备 32010502010132号</a>
+                    <span>|</span>
+                    <a target="_blank" href="#" rel="">出版物经营许可证</a>
+                    <span>|</span>
+                    <a target="_blank" href="#" rel="">苏B2-20120395</a>
+                    <span>|</span>
+                    <a target="_blank" href="#" rel="">食品经营许可证</a>
+                </p>
+            </div>
+            <div class="copyright">
+                <p>
+                    CopyRight © 2007-2020 南京新与力文化传播有限公司
+                    <a class="six" href="#" target="_blank" rel="nofollow">苏ICP备09011225号</a>
+                    NewPower Co. 版权所有 江苏省南京市建邺区嘉陵江东街18号南京国家广告产业园5栋17，18楼 025-87781000
+                </p>
+            </div>
+        </div>
+        <div class="hei4">
+            <div class="content2">
+                    <ul class="clear">
+                            <li class="friend"><a href="#">友情链接:</a></li>
+                            <li class="h1"><a href="#" target="_blank" class="huo1">有货</a></li>
+                            <li><a href="#" target="_blank">时尚品牌网</a></li>
+                            <li><a href="#" target="_blank">服装品牌</a></li>
+                            <li><a href="#" target="_blank">拍婚纱照</a></li>
+                            <li><a href="#" target="_blank">搜好货网</a></li>
+                            <li><a href="#" target="_blank">手表知识</a></li>
+                            <li><a href="#" target="_blank">丽人时尚网</a></li>
+                            <li><a href="#" target="_blank">公司评价</a></li>
+                            <li><a href="#" target="_blank">商品百科</a></li>
+                            <li><a href="#" target="_blank">免费试用</a></li>
+                            <li><a href="#" target="_blank">女装批发拿货</a></li>
+                            <li><a href="#" target="_blank" class="zuoyi">佐卡伊</a></li>
+                            <li><a href="#" target="_blank">品牌服装网</a></li>
+                            <li><a href="#" target="_blank">时尚女人网</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</body>  
