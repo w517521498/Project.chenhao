@@ -13,13 +13,13 @@ function rannum(min, max) {
 }
 
 //3.获取元素
-/* function $(selector, all) {
+ function $(selector, all) {
     if (all === true) {
         return document.querySelectorAll(selector);
     } else {
         return document.querySelector(selector);
     }
-} */
+} 
 //4.缓冲运动
 function bufferMove(obj, json, fn) { //fn:回调函数
     let speed = 0;

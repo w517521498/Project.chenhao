@@ -127,6 +127,7 @@ li{
                    width: 550px;
                    height: 32px;
                    float: left;
+
                    .text{
                        width: 66px;
                        height: 32px;
@@ -137,13 +138,58 @@ li{
                         font-size: 16px;
                        }
                    }
+                   .yh2{
+                       .app{
+                        position: absolute;
+                        top: 32px;
+                        margin-left: -26px;
+                        width: 146px;
+                        padding: 20px 0 14px;
+                        background-color: #f4f4f4;
+                        border: none;
+                        z-index: 1000;
+                        display: none;
+                        img{
+                            margin: 2px auto 3px 26px;
+                            width: 96px;
+                            height: 96px;
+                        }
+                        h5{
+                            height: 18px;
+                            line-height: 18px;
+                            font-size: 12px;
+                            text-align: center;
+                        }                  
+                       }
+                   }
                    .sj{
                        width: 72px;
+                       .app1{
+                        position: absolute;
+                        top: 32px;
+                        margin-left: -26px;
+                        width: 146px;
+                        padding: 20px 0 14px;
+                        background-color: #f4f4f4;
+                        border: none;
+                        z-index: 1000;
+                        display: none;
+                            img{
+                                margin: 2px auto 3px 26px;
+                                width: 96px;
+                                height: 96px;
+                                position: relative;
+                                h5{
+                                    height: 18px;
+                                    line-height: 18px;
+                                    font-size: 12px;
+                                    text-align: center;
+                                }
+                            }
+                       }
                    }
                    .kf{
                        width: 82px;
-                    //    float: left;
-                    //     padding-right: 10px;
                         position: relative; 
                     .down{
                         top: 32px;
@@ -173,9 +219,6 @@ li{
                             }                     
                         }
                     }
-                    // .kf .fw:hover .down{
-                    //     display: block;
-                    // }
                    }
                     li{
                         width: 80px;
@@ -184,7 +227,7 @@ li{
                         height: 32px;
                         line-height: 32px;
                         font-size: 12px;
-                        // padding: 10px 0;
+                        // background: ;
                         .tag-seprate{
                              width: 0;
                                 margin-top: 11px;
@@ -256,6 +299,18 @@ li{
 
                     }
                }
+               .dinglan>li:hover .down{
+                   display: block;
+               }
+               .dinglan>.yh1:hover{
+                   background: #eaeceb;
+               }
+               .dinglan>.yh2:hover .app{
+                   display: block;
+               }
+               .dinglan>.sj:hover .app1{
+                   display: block;
+               }
             }
     }
 %tou{
@@ -313,10 +368,22 @@ li{
                         box-sizing: border-box;
                         padding-left: 10px;
                         color: #b0b0b0;
+                        position: relative;
                     }
-                    .icon-zu{
-                        padding-left: 26px;
+                    .fdj{
+                        position: absolute;
+                        top: 30px;
+                        height: 41px;
+                        margin-bottom: -15px;
+                        width: 20px;
+                        height: 10px;
                     }
+                }
+                .sousuolanxiala{
+                    height: 10px;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
                 }
                 .hot{
                     width: 320px;
@@ -795,6 +862,12 @@ li{
                 text-align: center;
                 line-height: 32px;
             }
+            .more{
+                position: absolute;
+                padding: 10px 0;
+                top: 78px;
+                right: 0;
+            }
         }
         .shang{
             width: 1200px;
@@ -802,6 +875,7 @@ li{
             ul{
                 width: 1150px;
                 height: 508px;
+                float: left;
                 li{
                     width: 188px;
                     height: 250px;
@@ -870,28 +944,68 @@ li{
                 text-align: center;
                 line-height: 32px;
             }
-        }
-}
-#chaoliu-shang{
-    @extend %box,%box1;
-    height: 974px;
-    background: purple;
-        .tou{
-            @extend %tou;
-            position: relative;
-            .hezi{
+            .more{
                 position: absolute;
-                top: 80px;
-                left: 422px;
-                width: 298px;
-                height: 32px;
-                border: 1px solid #000;
-                text-align: center;
-                line-height: 32px;
+                padding: 10px 0;
+                top: 78px;
+                right: 0;
             }
         }
         .shang{
-
+            width: 1200px;
+            height: 508px;
+            ul{
+                width: 1150px;
+                height: 508px;
+                li{
+                    width: 188px;
+                    height: 250px;
+                    float: left;
+                    margin: 6px 4px 0 0;
+                    .yufulan{
+                        height: 228px;
+                        padding: 10px 0;
+                        background-color: #f8f8f8;
+                        overflow: hidden;
+                        a{
+                            float: left;
+                            width: 50%;
+                            height: 38px;
+                            line-height: 38px;
+                            font-size: 14px;
+                            text-align: center;
+                            color: #000;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                .zhong{
+                    width: 376px;
+                    height: 250px;
+                    img{
+                        width: 376px;
+                        height: 250px;
+                    }
+                }
+                #lazy{
+                    margin-top: 4   px;
+                }
+            }
+        }
+        .xia{
+            width: 1150px;
+            height: 328px;
+            ul{
+                width: 100%;
+                height: 306px;
+                margin-top: 8px;
+                li{
+                    width: 222px;
+                    height: 298px;
+                    float: left;
+                    padding: 8px 6px 0 0;
+                }
+            }
         }
 }
 #fashion{
@@ -911,6 +1025,68 @@ li{
                 text-align: center;
                 line-height: 32px;
             }
+            .more{
+                position: absolute;
+                padding: 10px 0;
+                top: 78px;
+                right: 0;
+            }
+        }
+        .shang{
+            width: 1200px;
+            height: 508px;
+            ul{
+                width: 1150px;
+                height: 508px;
+                li{
+                    width: 188px;
+                    height: 250px;
+                    float: left;
+                    margin: 6px 4px 0 0;
+                    .yufulan{
+                        height: 228px;
+                        padding: 10px 0;
+                        background-color: #f8f8f8;
+                        overflow: hidden;
+                        a{
+                            float: left;
+                            width: 50%;
+                            height: 38px;
+                            line-height: 38px;
+                            font-size: 14px;
+                            text-align: center;
+                            color: #000;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                .zhong{
+                    width: 376px;
+                    height: 250px;
+                    img{
+                        width: 376px;
+                        height: 250px;
+                    }
+                }
+                #lazy{
+                    margin-top: 4   px;
+                }
+            }
+        }
+        .xia{
+            width: 1150px;
+            height: 328px;
+            ul{
+                width: 100%;
+                height: 306px;
+                margin-top: 8px;
+                li{
+                    width: 222px;
+                    height: 298px;
+                    float: left;
+                    padding: 8px 6px 0 0;
+                }
+            }
         }
 }
 #chaomen{
@@ -929,6 +1105,68 @@ li{
                 border: 1px solid #000;
                 text-align: center;
                 line-height: 32px;
+            }
+            .more{
+                position: absolute;
+                padding: 10px 0;
+                top: 78px;
+                right: 0;
+            }
+        }
+        .shang{
+            width: 1200px;
+            height: 508px;
+            ul{
+                width: 1150px;
+                height: 508px;
+                li{
+                    width: 188px;
+                    height: 250px;
+                    float: left;
+                    margin: 6px 4px 0 0;
+                    .yufulan{
+                        height: 228px;
+                        padding: 10px 0;
+                        background-color: #f8f8f8;
+                        overflow: hidden;
+                        a{
+                            float: left;
+                            width: 50%;
+                            height: 38px;
+                            line-height: 38px;
+                            font-size: 14px;
+                            text-align: center;
+                            color: #000;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                .zhong{
+                    width: 376px;
+                    height: 250px;
+                    img{
+                        width: 376px;
+                        height: 250px;
+                    }
+                }
+                #lazy{
+                    margin-top: 4   px;
+                }
+            }
+        }
+        .xia{
+            width: 1150px;
+            height: 328px;
+            ul{
+                width: 100%;
+                height: 306px;
+                margin-top: 8px;
+                li{
+                    width: 222px;
+                    height: 298px;
+                    float: left;
+                    padding: 8px 6px 0 0;
+                }
             }
         }
 }
@@ -962,29 +1200,31 @@ li{
                 height: 356px;
                 float: left;
                 padding: 0 8px 52px 0;
-                img{
-                    width: 222px;
-                    height: 298px;
-                }
-                h4{  
-                    width: 100%;
-                    height: 18px;
-                    margin-top: 16px;
-                    line-height: 1.5;
-                    display: block;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    font-size: 12px;
-                    text-align: center;
-                }
-                p{  
-                    width: 100%;
-                    height:22px ;
-                    margin-top: 5px;
-                    line-height: 22px;
-                    font-size: 12px;
-                    text-align: center;
+                a{
+                    img{
+                        width: 222px;
+                        height: 298px;
+                    }
+                    h4{  
+                        width: 100%;
+                        height: 18px;
+                        margin-top: 16px;
+                        line-height: 1.5;
+                        display: block;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                    p{  
+                        width: 100%;
+                        height:22px ;
+                        margin-top: 5px;
+                        line-height: 22px;
+                        font-size: 12px;
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -1002,13 +1242,15 @@ li{
         } 
 }
 #footer{
-    @extend %box;
+    width: 1903px;;
     height: 400x;
     background: #000;
+    margin: 0 auto;
     .hei1{
         width: 1150px;
         height: 60px;
         margin: 0 auto;
+        // position: absolute;
         ul{
             width: 534px;
             height: 60px;

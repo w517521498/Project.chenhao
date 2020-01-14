@@ -16,10 +16,10 @@
                     strhtml += `
                     <li>
                     <a href="details.html?sid=${value.sid}">
-                    </a>
                     <img src="${value.url}">
                     <h4>${value.title}</h4>
-                    <P>￥${value.price}</p>
+                    <P>¥${value.price}</p>
+                    </a>
                     </li>
                     `;
                 }

@@ -311,6 +311,12 @@ a:focus, input, textarea {
     width: 534px;
     height: 60px;
 }
+#footer .hei1 ul .zaixian{
+    position: absolute;
+    top: 567px;
+    left: 766px;
+    list-style: none;
+}
 #footer .hei1 ul .zhengpin{
     width:118px;
     margin-right: 60px;
