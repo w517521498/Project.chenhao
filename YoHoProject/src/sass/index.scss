@@ -805,28 +805,39 @@ li{
     .banner1{
         width: 1150px;
         height: 176px;
+        overflow: hidden;
         .lun1{
-            width: 1150px;
+            width: 2316px;
             height: 176px;
             position: relative;
-            overflow: hidden;
+            // overflow: hidden;
+            animation:bannerMove 1.5s linear  infinite normal ;
+            // animation-play-state:running;
+            animation-delay: 1.5s;
             li{
                 width: 378px;
                 height: 176px;
                 float: left;
-                // position: absolute;
-                // padding-right: 5px;
-                // top: 176px;
-                // left: 378px;
-                // img{
-
-                // }
+       
             }
             .middle1{
                 padding:0 8px;
             }
             
         }
+        @keyframes  bannerMove {
+            0%{
+                margin-left: 0px;
+            }
+            // 50%{
+            //     margin-left: -575px;
+
+            // }
+            100%{
+                margin-left: -1150px;
+            }
+        }
+
     }
     .paizi{
         width: 1200px;
@@ -1472,3 +1483,21 @@ li{
 
     }
 }
+// .code-down-box{
+//     position: fixed;
+//     top: 260px;
+//     right: 20px;
+//     width: 117px;
+//     padding-top: 20px;
+//     border: none;
+//     background-color: transparent;
+//     z-index: 990;
+//     display: block;
+//     .code-img{
+//         width: 116px;
+//         height: 116px;
+//         background-image: url(img/layout/cover-qr-large.png?16f0e569982);
+//         background-repeat: no-repeat;
+//         background-size: 100% 100%;
+//     }
+// }

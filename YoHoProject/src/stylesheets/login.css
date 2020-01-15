@@ -87,6 +87,9 @@ body {
     padding: 0 10px;
     line-height: 28px;
 }
+.simple-header .header-tool li a{
+    list-style: none;
+}
 .simple-header .header-tool .tool-options-large, .simple-header .header-tool .tool-options-large .tool-select {
     width: 80px;
     box-sizing: border-box;
@@ -173,9 +176,6 @@ a:focus, input, textarea {
 .login-page .switch {
     width: 100%;
     height: 27px;
-    background-image: url(img/sprite.passport.png?t=1576493576872);
-    background-position: -323px 0;
-    background-size: 595px 298px;
     border-radius: 13px;
     font-size: 14px;
 }
@@ -479,7 +479,8 @@ a:focus, input, textarea {
 #footer .hei4 .content2 ul{
     width:1150px;
     height:48px;
-    margin:0 auto
+    margin:0 auto;
+    position: relative;
 }
 #footer .hei4 .content2 ul .friend{
     width: 60px;
@@ -505,6 +506,9 @@ a:focus, input, textarea {
 #footer .hei4 .content2 ul li .huo1{
     width: 24px;
     height: 14px;
+    position: absolute;
+    top: 18px;
+    left: 90px;
 }
 #footer .hei4 .content2 ul li .zuoyi{
     margin-left: 18px;
